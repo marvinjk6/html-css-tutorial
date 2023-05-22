@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Specificity</title>
+
+   <style>
+
+      /* essa cor não será aplicada devido ao last rule, mais um baixo do documento está sendo aplicado a cor laranja em paragrafos */
+      p {
+         color: red;
+      }
+
+      #green {
+         color: green;
+      }
+
+      .blue {
+         color: blue;
+      }
+
+      /* será aplicada a cor laranja para os paragrafos sem id e classe (pq são mais específicos),  */
+      p {
+         color: orange; 
+      }
+
+      #titulo {
+         color: purple;
+
+      }
+
+      .titulo {
+         color: pink;
+
+      }
+
+
+   </style>
+
+</head>
+<body>
+
+   <h1 id="titulo" class="titulo">Título</h1>
+
+   <p id="green" class="blue"> <!-- green será aplicado, id + específico -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, eius earum consequatur dolorem, magni cupiditate dicta officia veritatis suscipit harum quo quasi vel sequi aliquam debitis ipsa doloremque odio? Nemo tempora at autem vel incidunt voluptate magnam sit? Aut, beatae.
+   </p>
+
+   <p class="blue"> <!-- a classe vai ser aplicada, + específica que o elemento -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, eius earum consequatur dolorem, magni cupiditate dicta officia veritatis suscipit harum quo quasi vel sequi aliquam debitis ipsa doloremque odio? Nemo tempora at autem vel incidunt voluptate magnam sit? Aut, beatae.
+   </p>
+
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, eius earum consequatur dolorem, magni cupiditate dicta officia veritatis suscipit harum quo quasi vel sequi aliquam debitis ipsa doloremque odio? Nemo tempora at autem vel incidunt voluptate magnam sit? Aut, beatae.
+   </p>
+
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, eius earum consequatur dolorem, magni cupiditate dicta officia veritatis suscipit harum quo quasi vel sequi aliquam debitis ipsa doloremque odio? Nemo tempora at autem vel incidunt voluptate magnam sit? Aut, beatae.
+   </p>
+
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, eius earum consequatur dolorem, magni cupiditate dicta officia veritatis suscipit harum quo quasi vel sequi aliquam debitis ipsa doloremque odio? Nemo tempora at autem vel incidunt voluptate magnam sit? Aut, beatae.
+   </p>
+   
+</body>
+</html>
