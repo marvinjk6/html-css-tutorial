@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Em Units</title>
+
+   <style>
+      /* alterando o font-size de root(html) */
+      html {
+         font-size: 10px;
+      }
+
+      div {
+         font-size: 20px;
+      }
+
+      /* o tamanho da fonte pasa a ser relativo ao tamanho de fonte definido na div, que é pai */
+      .relative {
+         font-size: 2em;
+      }
+
+      .absolute {
+         font-size: 32px;
+      }
+
+      .rem {
+         font-size: 2rem;
+      }
+   </style>
+
+</head>
+
+<body>
+   
+   <div>
+      <h3 class="relative">Título número 1 - 2em - relativo a div</h3>
+   </div>
+
+   <div>
+      <h3 class="absolute">Título número 2 - 32px</h3>
+   </div>
+
+   <div>
+      <h3 class="rem">Título número 3 - 2rem - relativo ao root(html)</h3>
+   </div>
+
+</body>
+</html>
