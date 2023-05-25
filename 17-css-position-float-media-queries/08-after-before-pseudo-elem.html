@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before, after pseudo elements</title>
+
+    <style>
+      div {
+        width: 70vw; /* tamanho responsivo */
+        margin: 100px auto;
+        position: relative; /* posição relativa para o pseudo elemento ser relativo a essa div */
+      }
+
+      img {
+        width: 100%;
+        display: block; /* para cobrir todo o espaço, pois img é inline */
+      }
+
+      div::before {
+        content: "";
+        border: 2px solid black;
+        width: 100%;
+        height: 100%;
+        position: absolute; /* posição absoluta em relação relativa a div */
+        box-sizing: border-box;
+        top: -40px;
+        left: -40px;
+        z-index: -2;
+        transition: all 0.5s linear;
+
+      }
+
+      div::after {
+        content: "";
+        background: rgba(128, 128, 128, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute; /* posição absoluta em relação relativa a div */
+        box-sizing: border-box;
+        top: -20px;
+        left: -20px;
+        z-index: -1;
+        transition: all 0.5s linear;
+
+      }
+
+      div:hover::after, div:hover::before{
+         top: 0;
+         left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="./images/big.jpeg" alt="" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Position absolute</title>
+
+   <style>
+      div {
+         border: 2px solid red;
+         background: orange;
+         color: white;
+         font-size: 2em;
+      }
+      
+      .one {
+         background-color: rgb(55, 204, 154);
+         
+      }
+      
+      .two {
+         background-color: cornflowerblue;
+         position: relative;
+      }
+
+      .special {
+         background-color: rosybrown;
+         color: black;
+         position: absolute;
+         top: 0;
+         left: 0;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div>
+      <p class="one">
+         RELATIVO ----Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga beatae inventore dolorem vitae, optio unde porro quod, totam, ea velit sed vel repellat accusamus voluptates quidem maiores! Illum, tempora ex.
+      </p>
+      <p class="two">
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga beatae inventore dolorem vitae, optio unde porro quod, totam, ea velit sed vel repellat accusamus voluptates quidem maiores! Illum, tempora ex. <span class="special">Eu sou absolute</span>
+      </p>
+      
+   </div>
+   
+</body>
+</html>
