@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>descendant and child selectors</title>
+
+    <!-- styles -->
+    <style>
+      /* classe é mais específico que elemento, por isso está sendo aplicado os estilos de cima com classe */
+      .header h1 {
+        color: green;
+      }
+      .header > h1 {
+        color: purple;
+      }
+      div h1 {
+        color: red;
+      }
+      div > h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>i'm a child and descendant</h1>
+    </div>
+    <div class="header">
+      <h1>i'm a child and descendant</h1>
+      <ul>
+        <li>
+          <h1>i'm a descendant</h1>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

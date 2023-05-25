@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>links pseudo class selectors</title>
+
+    <!-- styles -->
+    <style>
+      a {
+        display: block;
+        background: lightblue;
+        margin: 10px;
+        font-size: 1.2em;
+      }
+      a:link {
+        color: white;
+      }
+      a:visited {
+        color: green;
+      }
+      a:active {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">general link</a>
+    <a href="https://www.twitter.com">visited link</a>
+    <a href="#">hover link</a>
+    <a href="#">active link</a>
+    <a>simple link</a>
+  </body>
+</html>
