@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Background position</title>
+
+   <style>
+      div {
+         height: 300px;
+         color: white;
+         border: 1px solid red;
+         margin-top: 0.8em;
+      }
+
+      .big-image {
+         background: url("./big.jpeg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+      }
+
+      .small-image {
+         background: url("./small.jpeg");
+         background-repeat: no-repeat;
+         background-position: 100% 90%;
+      }
+
+      .folder-image {
+         background: url("./images/folder-img.jpeg");
+         background-size: contain;
+      }
+
+      
+   </style>
+</head>
+
+<body>
+   <div class="big-image">
+      <h1>I'm big image - cover</h1>
+   </div>
+
+   <div class="small-image">
+      <h1>I'm small image</h1>
+   </div>
+
+   <div class="folder-image">
+      <h1>I'm folder image - contain</h1>
+   </div>
+</body>
+</html>

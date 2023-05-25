@@ -36,6 +36,9 @@
 #### Questions
 
 - Why section title in a separate div?
+  - Está separado por uma questão de reusabilidade, é como se fosse um componente que pode ser copiado e colado, isso facilita o desenvolvimento
 - Why 90vw and 1170px?
+  - 90vw - é para sempre ocupar um mesmo espaço independente do dispositivo, responsividade e consistencia
+  - max-width: 1170px - ter um tamanho máximo para ser que se o dispositivo for muito grande facilitar a leitura
 - The purpose of section-center
-- Examples
+  - pois a largura de section será do tamanho da tela com o background branco, e section-center vai estar centralizado com um tamanho limitado e com o conteúdo

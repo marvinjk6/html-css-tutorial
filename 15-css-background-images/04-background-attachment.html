@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Background attachment</title>
+
+   <style>
+
+      * {
+         margin: 0;
+      }
+      div {
+         min-height: 100vh;
+         color: white;
+         border: 1px solid red;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 2rem;
+      }
+
+      .big-image {
+         background: url("./big.jpeg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+      }
+
+      .folder-image {
+         background: url("./images/folder-img.jpeg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+      }
+
+      
+   </style>
+</head>
+
+<body>
+   <div class="big-image">
+      <p>
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sed earum commodi quod eos obcaecati sunt et quasi corporis unde
+      </p>
+   </div>
+
+   <div class="folder-image">
+      <p>
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sed earum commodi quod eos obcaecati sunt et quasi corporis unde
+      </p>
+
+   </div>
+
+   <div class="big-image">
+      <p>
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sed earum commodi quod eos obcaecati sunt et quasi corporis unde
+      </p>
+   </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Linear gradient</title>
+
+   <style>
+      div {
+         width: 150px;
+         height: 150px;
+         margin-top: 10px;
+      }
+
+      .one {
+         background: linear-gradient(red, green);
+         /* cima para baixo */
+      }
+
+      .two {
+         background: linear-gradient(to right, blue, green, red, yellow);
+      }
+
+      .three {
+         background: linear-gradient(300deg, blue, green, red);
+      }
+
+      .four {
+         background: linear-gradient(to right, blue 50%, yellow);
+      }
+
+      .five {
+         background: linear-gradient(to right,rgba(0,0,0,0.2), rgb(0,0,0,0.9));
+      }
+   </style>
+</head>
+<body>
+   
+   <div class="one"></div>
+   <div class="two"></div>
+   <div class="three"></div>
+   <div class="four"></div>
+   <div class="five"></div>
+  
+
+
+
+</body>
+</html>
