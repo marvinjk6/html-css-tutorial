@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Animation Fill mode</title>
+
+   <style>
+
+      div {
+         width: 200px;
+         height: 200px;
+         color: white;
+         margin: 5px;
+         font-size: 1.5em;
+         text-align: center;
+         opacity: 0;
+      }
+
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      .animation {
+         background: blue;
+         animation: move 5s 2;
+         animation-fill-mode: forwards;
+      }
+
+      /* --- criando a animação --- */
+      /* nome - move */
+      @keyframes move {
+         0% {
+            opacity: 0.1;
+         }
+         25% {
+            transform: translateX(200px);
+            opacity: 0.25;
+         }
+         50% {
+            transform: translateX(-50px);
+            opacity: 0.5;
+         }
+         75% {
+            opacity: 0.75;
+
+         }
+         100% {
+            transform: translateX(20px);
+            opacity: 1;
+         }
+      }
+
+      
+   </style>
+
+</head>
+<body>
+
+   <div class="animation">animation</div>
+   
+</body>
+</html>

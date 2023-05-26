@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Transform - scale()</title>
+
+   <style>
+
+      .container {
+         width: 70vw;
+         margin: 0 auto;
+      }
+      div {
+         width: 200px;
+         height: 200px;
+         margin-top: 2em;
+      }
+
+      .one {
+         background-color: red;
+         transform: scale(0.5);
+      }
+
+      .two {
+         background-color: blue;
+         transform: scaleY(1.5); 
+      }
+
+      .three {
+         margin-top: 5em;
+         background-color: green;
+         transform: scalex(2);
+      }
+      
+   </style>
+
+</head>
+<body>
+
+   <div class="container">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+   </div>
+
+   
+</body>
+</html>

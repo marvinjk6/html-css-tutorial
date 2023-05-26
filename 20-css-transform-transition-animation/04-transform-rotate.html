@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Transform - rotate()</title>
+
+   <style>
+
+      .container {
+         width: 70vw;
+         margin: 0 auto;
+      }
+      div {
+         width: 200px;
+         height: 200px;
+         margin-top: 2em;
+      }
+
+      .one {
+         background-color: red;
+         transform: rotate(20deg);
+      }
+
+      .two {
+         background-color: blue;
+         transform: rotate(-20deg);
+      }
+
+      .three {
+         background-color: green;
+         transform: rotateX(50deg); /* encolhe o elemento */
+         /* transform: rotateZ(50deg) */
+        
+      }
+      
+   </style>
+
+</head>
+<body>
+
+   <div class="container">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+   </div>
+
+   
+</body>
+</html>
