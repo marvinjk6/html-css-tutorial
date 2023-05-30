@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Variables</title>
+
+   <style>
+      :root{
+         --primaryColor: #f15025;
+         --secondaryColor: #36f125;
+         --mainTransition: all .5s ease;
+         --mainSpacing: 5px;
+         --letterSpacing: 2px;
+      }
+
+      ul {
+         list-style: none;
+         text-align: center;
+      }
+
+      .navbar li a {
+         display: block;
+         width: 80px;
+         height: 30px;
+         padding: 5px 10px;
+         line-height: 25px;
+         margin-bottom: 0.3em; 
+         text-decoration: none;
+         background-color: var(--primaryColor);  /* usar a função var e passar a variável*/
+         color: white;
+         border-radius: 8px;
+         transition: var(--mainTransition);
+      }
+
+      .navbar a:hover {
+         background-color: var(--secondaryColor);
+         color: black;
+      } 
+
+      .main {
+         --mainColor: #2539f1; /* variavel local */
+         width: 70vw;
+         max-width: 800px;
+         margin: 0 auto;
+         text-align: center;
+      }
+
+      .main h1 {
+         letter-spacing: var(--letterSpacing);
+         color: var(--mainColor) /* usando a variavel local */
+      }
+   </style>
+</head>
+<body>
+
+   <div class="navbar">
+      <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Curiosidades</a></li>
+         <li><a href="#">Sobre nós</a></li>
+         <li><a href="#">Contato</a></li>
+      </ul>
+   </div>
+
+   <div class="main">
+      <h1>Title</h1>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odit quaerat suscipit assumenda, labore vero! Laudantium exercitationem assumenda deserunt cupiditate veniam quae doloribus illo numquam beatae. Similique, nulla qui. Tenetur nisi, non beatae obcaecati, voluptate error perspiciatis tempora quo maxime rerum iusto laborum repellendus! Optio id ullam cum error mollitia obcaecati! Harum et illum dolore accusamus. Recusandae cupiditate id dicta tempora blanditiis eveniet, hic, inventore consequuntur ducimus vel nobis, totam nam veritatis perferendis repudiandae minima. Magni eligendi exercitationem nam cum ex adipisci quod, praesentium quasi aliquam officia assumenda obcaecati eius autem debitis sunt velit? Cum enim voluptates explicabo voluptate neque sunt esse nisi, corporis, saepe distinctio illo soluta aut corrupti quasi, dicta impedit et aliquam autem fugit officia laborum iusto perferendis! Tempore dolorem atque aliquid accusantium beatae perspiciatis amet facere, eligendi iusto. Explicabo nemo alias quas, repellat molestias atque corrupti culpa, ipsum accusantium labore in assumenda saepe maiores necessitatibus soluta minima sunt architecto debitis quidem officia delectus sint aspernatur reiciendis fugiat. Maxime quisquam accusamus iusto molestias magnam aliquam culpa id vero enim aliquid repellat a voluptatem ipsa odio dolorem, ex reiciendis possimus. Eveniet tempore laudantium, consequatur incidunt eligendi sequi pariatur laborum, dolore porro earum quae maxime molestiae, sapiente dolorem eum dolor voluptas enim sint fugiat. Tempora voluptas at quis deserunt commodi, possimus ipsa sequi eos, distinctio similique consequuntur nemo animi officiis dolore neque ex dolorum laborum, enim excepturi repudiandae? Nisi perspiciatis atque consectetur! Vel sed quas, hic nobis doloribus incidunt veniam repellendus officia id asperiores reiciendis ea magni ut, repellat tenetur aspernatur ad minus inventore. 
+      </p>
+   </div>
+   
+</body>
+</html>
