@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Justify content</title>
+
+   <style>
+
+      /* flex-wrap */
+      /* nowrap (default), wrap, wrap-reverse */
+      .container {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: flex-start; /* colados na esquerda */ 
+         justify-content: flex-end; /* colados na direita */ 
+         justify-content: space-between; /* distanciamento entre os elementos de extremidade */
+         justify-content: space-around; /* espace entre os elementos, com margem dos dois dados */
+         justify-content: space-evenly; /* margens IGUAIS para os dois lados */
+         justify-content: center;
+         
+      }
+
+   </style>
+</head>
+
+<body>
+
+   <!-- parent = flex-container -->
+   <div class="container">
+
+      <!-- children = flex-items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      
+   </div>
+   
+</body>
+</html>

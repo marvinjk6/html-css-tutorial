@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Align-items</title>
+
+   <style>
+
+      /* flex-wrap */
+      /* stretch (default), flex-start, flex-end, center */
+      .container {
+         height: 50vh;
+         display: flex;
+         flex-wrap: wrap;
+         align-items: flex-start;
+         align-items: flex-end;
+         align-items: center;
+         align-items: baseline; /* o baseline faz com que os elementos fiquem alinhados de acordo com o conteúdo, e não com o container */
+         
+         
+      }
+
+   </style>
+</head>
+
+<body>
+
+   <!-- parent = flex-container -->
+   <div class="container">
+
+      <!-- children = flex-items -->
+      <div class="box box-1">Logo</div>
+      <div class="box box-2">link</div>
+      <div class="box box-3">link</div>
+      <div class="box box-4">link</div>
+      <div class="box box-5">link</div>
+      
+   </div>
+   
+</body>
+</html>
