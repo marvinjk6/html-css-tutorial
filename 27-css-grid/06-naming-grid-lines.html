@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Naming Grid-lines</title>
+
+   <style>
+      .container {
+         margin: 5rem;
+         height: 100vh;
+         display: grid;
+         grid-template-columns:[start] 100px [col-2] 100px [col-3] 100px [end];
+         grid-template-rows: [start] 100px [row-2 ]100px [row-3] 100px [end];
+         gap: 1rem;
+      }
+      .cell-1 {
+         grid-column: start/end;
+         grid-row: start/row-3;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="cell cell-1">cell 1</div>
+      <div class="cell cell-2">cell 2</div>
+      <div class="cell cell-3">cell 3</div>
+      <div class="cell cell-4">cell 4</div>
+      <div class="cell cell-5">cell 5</div>
+      <div class="cell">cell 6</div>
+      <div class="cell">cell 7</div>
+
+   </div>
+   
+</body>
+</html>
